@@ -1,0 +1,52 @@
+{
+  "name": "quelab_signin",
+  "version": "1.0.0",
+  "description": "Door Login Control for Quelab",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --host 0.0.0.0 --hot"
+  },
+  "author": "Troy Ross <kak.bo.che@gmail.com>",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "html-webpack-template": "^5.6.0",
+    "http-proxy-middleware": "^0.17.4",
+    "icons-loader": "^0.0.6",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.3",
+    "webpack-bundle-analyzer": "^2.8.3",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "github-markdown-css": "^2.8.0",
+    "highlight.js": "^9.12.0",
+    "imports-loader": "^0.7.1",
+    "jquery": "^3.2.1",
+    "moment": "^2.19.1",
+    "mqtt": "^2.13.0",
+    "popper.js": "^1.11.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
+    "showdown": "^1.7.2"
+  }
+}
