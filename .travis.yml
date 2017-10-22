@@ -1,0 +1,16 @@
+git:
+  submodules: false
+language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+script: NODE_ENV=production npm run build -- -p && tar -czvf dist.tar.gz dist
+deploy:
+  provider: releases
+  api_key:
+    secure: PtP+St+9kJfEX2LNqDJzo8p3av6vIzQ2eXOazD4jje8Ni903q9T8e0LBvpWLVU5rtOnF9ykFqCe9w7JTWNvBQkb93Skd1sObb121K4Dwtyg+iUR7pIa07lAi2HneHaSkIahUI5Xe7I7Otirk9gYa0CRTM1uV/ICj6fjIL/8MYYlWTYysn89fbQwLOqdVC7rZee4FtaeYmPYI25jFET0PJTTwU4+hR9Yhh0gULU7uNwezCJ8PHCX+vVxq1aw6pwXZmiLLTDI52zZSEt96vwn2ZEPwmDKJFUANguBfb+7XdxorIGlvX8W/MMc6nJmQVF32PP0V1w7AyY36O8h4Bm892tuwzZa0eNKORdZ5RTioCHQE7jNeNhn2y/JyCL8RRcZEsrc15cI7p81A8doOUWcEzzisREAc+FE938AzP+48OrUNq36qmVjmKeU1JMHR2Cm8Qkaer3AYDxjeW8fjUt2aRvuOJaf0M1EQ60xh2SpAE4DBUjEIiHsFxL1c5UtDXcBbuJbCHAyYNTQDgGnmc/HShTCR4F86IAfViPc1Rmyy4hoYPTujm+1KEI1KtnjUxMAelL/Wh3EMxJcV+Rub1Up/pePmPKiXtmgANBGP/cI5mOutErIzFv7Nq2C4d/TjW3JSAq4Zn9YDKkfvzVRQ8A3WRJDl9q9NismIickKhfgh5yc=
+  file: dist.tar.gz
+  on:
+    repo: kak-bo-che/quelab-web-signin
